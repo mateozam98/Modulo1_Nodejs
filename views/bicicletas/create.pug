@@ -1,0 +1,28 @@
+extends ./layout
+
+block content
+  a(href='/bicicletas') Atras
+  br
+  h1 Crear una Bicicleta
+  br
+  form(action='/bicicletas/create' method='post')
+    .form-group
+      label(for="id") ID:
+      input#id(type="text" name="id" class="form-control" placeholder="Ingrese un identificador")
+    .form-group
+      label(for="color") Color:
+      input#id(type="text" name="color" class="form-control" placeholder="Ingrese un color de la bicicleta")
+    .form-group
+      label(for="modelo") Modelo:
+      input#id(type="text" name="modelo" class="form-control" placeholder="Ingrese un modelo de bicicleta")
+    .form-group
+      label(for="ciudad") Ciudad:
+      input#id(type="text" name="ciudad" class="form-control" placeholder="Ingrese una ciudad")
+    .form-group
+      label(for="lat") Latitud:
+      input#id(type="text" name="lat" class="form-control" placeholder="Ingrese una latitud (Ejemplo: 7.8484838)")
+    .form-group
+      label(for="lng") Longitud:
+      input#id(type="text" name="lng" class="form-control" placeholder="Ingrese una longuitud (Ejemplo: 7.8484838)")
+    br
+    input.btn(type='submit' value='Guardar' class='btn-success')

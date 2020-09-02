@@ -1,0 +1,28 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  text-align: center; 
+}
+
+body h1 {
+  text-align: center;
+}
+
+body .row {
+  margin-left: 0px;
+  margin-right: 0px; 
+}
+
+body a {
+  background-color: orange;
+  color: black;
+  padding: 3px 3px 3px 3px;
+}
+
+body #map {
+  margin-top: 10px;
+  border-radius: inherit;
+  height: 600px;
+  box-shadow: 2px 4px 7px -1px #9bb4c0; 
+}
+
